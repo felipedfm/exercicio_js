@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Calculadora de Média de Idades</title>
+</head>
+<body>
+  <h1>Calculadora de Média de Idades</h1>
+
+  <script>
+    
+    const idades = [15, 30, 35, 40, 85];
+
+    function calcularMediaIdades(lista) {
+      if (lista.length === 0) {
+        return 0; 
+      }
+
+      let soma = 0;
+
+      for (let i = 0; i < lista.length; i++) {
+        soma += lista[i];
+      }
+
+      const media = soma / lista.length;
+      return media;
+    }
+
+    const mediaIdades = calcularMediaIdades(idades);
+    document.write(`<p>A média das idades é: ${mediaIdades}</p>`);
+  </script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<script> 
+
+const numero = prompt("Digite um número:");
+const numeroInteiro = parseInt(numero);
+
+if (!isNaN(numeroInteiro)) {
+
+  if (numeroInteiro % 2 === 0) {
+    document.write(`O número ${numeroInteiro} é par.`);
+  } else {
+    document.write(`O número ${numeroInteiro} é ímpar.`);
+  }
+} else {
+  document.write("Por favor, digite um número válido.");
+}
+
+
+</script>
+
+</body>
+</html>

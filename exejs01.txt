@@ -1,0 +1,13 @@
+function encontrarMaiorNumero(numero1, numero2) {
+  if (numero1 > numero2) {
+    return numero1;
+  } else {
+    return numero2;
+  }
+}
+
+
+const n1 = 10;
+const n2 = 20;
+const maiorNumero = encontrarMaiorNumero(n1, n2);
+document.write(`O maior número entre ${n1} e ${n2} é ${maiorNumero}.`);

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<script> 
+
+const numeroTabuada = prompt("Digite um número para ver sua tabuada:");
+const numeroInteiro = parseInt(numeroTabuada);
+
+if (!isNaN(numeroInteiro)) {
+  document.write(`Tabuada do ${numeroInteiro}:`);
+  document.write("<br>","<br>");
+  
+  for (let i = 1; i <= 10; i++) {
+    const resultado = numeroInteiro * i;
+    document.write(`${numeroInteiro} x ${i} = ${resultado}`);
+    document.write("<br>");
+    
+  }
+} else {
+  document.write("Por favor, digite um número válido.");
+}
+
+
+</script>
+
+</body>

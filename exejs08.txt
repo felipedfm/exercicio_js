@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Encontrar Maior e Menor Valor</title>
+</head>
+<body>
+  <h1>Encontrar Maior e Menor Valor</h1>
+
+  <script>
+    const listaDeValores = [10, 5, 70, 30, 15];
+
+    function encontrarMaiorValor(lista) {
+      if (lista.length === 0) {
+        return undefined;
+      }
+
+      let maior = lista[0];
+
+      for (let i = 1; i < lista.length; i++) {
+        if (lista[i] > maior) {
+          maior = lista[i];
+        }
+      }
+
+      return maior;
+    }
+
+   
+    function encontrarMenorValor(lista) {
+      if (lista.length === 0) {
+        return undefined;
+      }
+
+      let menor = lista[0]; 
+
+      for (let i = 1; i < lista.length; i++) {
+        if (lista[i] < menor) {
+          menor = lista[i];
+        }
+      }
+
+      return menor;
+    }
+    const maiorValor = encontrarMaiorValor(listaDeValores);
+    const menorValor = encontrarMenorValor(listaDeValores);
+
+    document.write(`<p>O maior valor na lista é: ${maiorValor}</p>`);
+    document.write(`<p>O menor valor na lista é: ${menorValor}</p>`);
+  </script>
+</body>
+</html>
